@@ -1,0 +1,22 @@
+{
+  "name": "express-ts",
+  "version": "1.0.0",
+  "description": "A starting point for building an application in Express while leveraging the benefits of TypeScript.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sean Donnelly",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-typescript": "^3.1.7",
+    "typescript": "^2.3.4"
+  },
+  "dependencies": {
+    "@types/body-parser": "^1.16.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}

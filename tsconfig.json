@@ -3,7 +3,18 @@
     "target": "es6",
     "module": "commonjs",
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+
+    //Do not allow JavaScript files in the source
+    "allowJs": false,
+
+    //Remove developer comments from the distributable code
+    "removeComments": true,
+
+    //The following force the compiler to throw an error when their respective code smells are present
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
   },
   "exclude": [
     "node_modules"

@@ -2,9 +2,14 @@
   "name": "express-ts",
   "version": "1.0.0",
   "description": "A starting point for building an application in Express while leveraging the benefits of TypeScript.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DonSeannelly/express-ts.git"
+  },
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/gulp start"
   },
   "author": "Sean Donnelly",
   "license": "MIT",

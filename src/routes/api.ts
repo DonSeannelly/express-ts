@@ -1,15 +1,30 @@
-import * as express from 'express';
+import * as Express from 'express';
+import { Request, Response, Router } from '@types/express';
 
+/**
+ * A static class that produces an Express router for use in the application.
+ * Any route-based business logic is contained here.
+ * 
+ * @author Sean Donnelly
+ */
 export default class API {
-    router;
 
-    static setupRouter() {        
-        let router = express.Router();
+    /**
+     * Get a mountable router.
+     * 
+     * @returns a complete routing system to be mounted
+     */
+    public static setupRouter(): Router {        
+        let router: Router = Express.Router();
         this.setRoutes(router);
         return router;
     }
-    private static setRoutes(router) {
-        router.get('/', (req, res) => {
+
+    /**
+     * Defines routes with respective handlers. 
+     */
+    private static setRoutes(router: Router): void {
+        router.get('/', (req: Request, res: Response) => {
           res.send('Hello World!')
         });
     }

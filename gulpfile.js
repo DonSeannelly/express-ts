@@ -1,8 +1,9 @@
 const gulp = require('gulp');
 const nodemon = require('gulp-nodemon');
 const ts = require('gulp-typescript');
-var exec = require('child_process').exec;
-var typedoc = require("gulp-typedoc");
+const exec = require('child_process').exec;
+const typedoc = require("gulp-typedoc");
+const package = require('./package.json');
 
 const JSON_FILES = ['src/*.json', 'src/**/*.json'];
 
@@ -43,10 +44,10 @@ gulp.task("typedoc", function() {
             readme: "none",
  
             // Output options (see typedoc docs) 
-            out: "./out",
+            out: "./docs",
  
             // TypeDoc options (see typedoc docs) 
-            name: "Express TS",
+            name: package.name,
             ignoreCompilerErrors: false,
             version: true,
         }))

@@ -17,15 +17,15 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-nodemon": "^2.2.1",
-    "gulp-typedoc": "^2.0.2",
-    "gulp-typescript": "^3.1.7",
-    "typedoc": "^0.7.1",
-    "typescript": "^2.3.4"
+    "gulp-typedoc": "^2.2.0",
+    "gulp-typescript": "^3.2.4",
+    "typedoc": "^0.7.2",
+    "typescript": "^2.6.2"
   },
   "dependencies": {
     "@oriented/express": "^1.0.3",
-    "@types/body-parser": "^1.16.3",
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3"
+    "@types/body-parser": "^1.16.8",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
   }
 }

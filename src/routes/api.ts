@@ -1,11 +1,9 @@
 import * as Express from 'express';
-import { Request, Response, Router } from '@types/express';
+import { Request, Response, Router } from 'express';
 
 /**
  * A static class that produces an Express router for use in the application.
  * Any route-based business logic is contained here.
- * 
- * @author Sean Donnelly
  */
 export default class API {
 
